@@ -42,5 +42,7 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+	<!-- this should appear -->
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
