@@ -1,0 +1,6 @@
+.row {
+	width: 85%;
+	max-width: 950px;
+	margin: 0 auto;
+	@include clearfix;
+}

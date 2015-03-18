@@ -1,8 +1,6 @@
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+	margin-top: 0.5em;
 
 	ul {
 		list-style: none;
@@ -52,7 +50,12 @@
 	}
 	a {
 		display: block;
+		color: white;
+		margin: 2em;
 		text-decoration: none;
+		position: relative;
+  		font-weight: normal;
+  		transition: 333ms all ease-in-out;
 	}
 
 	.current_page_item > a,

@@ -1,0 +1,54 @@
+.hero {
+	text-align: center;
+	height: 330px;
+	@include background-image(scroll);
+
+	.content-wrap{
+		@include vertical-align;
+	}
+
+	h1,p {
+	color: white;
+	}
+
+	h1 {
+		margin-bottom: 0;
+	}
+
+	p {
+		margin-top: 0;
+	}
+
+	a {
+
+	}
+}
+
+.drivers{
+	background: $gray;
+	padding: 2em 0;
+
+
+	.driver-column {
+		float: left;
+		width: 33%;
+		padding: 0 1em;
+		text-align: center;
+
+	h2 {
+		position: relative;
+		padding-bottom: 1em;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			height: 3px;
+			left: 30%;
+			right: 30%;
+			background: #fff;
+		}
+	}
+	}
+}
+
