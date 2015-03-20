@@ -1,6 +1,37 @@
+$grid-gutter: .5%;
+
 .row {
-	width: 85%;
-	max-width: 950px;
+	width: 100%;
+	max-width: 100%;
 	margin: 0 auto;
 	@include clearfix;
+}
+
+.column {
+	float: left;
+	margin-right: $grid-gutter;
+	
+
+	&.half {
+		width: (100% - ($grid-gutter * 1)) / 2;
+	}
+
+	&.third {
+		width: (100% - ($grid-gutter * 2)) / 3;
+	}
+
+	&.fourth {
+		width: (100% - ($grid-gutter * 3)) / 4;
+	}
+
+
+	&:last-of-type {
+		margin: 0; 
+	}
+
+	@include breakpoint(phone) {
+		width: 100% !important;
+		margin-right: 0;
+		}
+
 }
